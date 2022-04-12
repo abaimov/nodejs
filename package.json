@@ -1,27 +1,17 @@
 {
-  "name": "tms_nodejs",
+  "name": "hard-user-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "app.js",
   "scripts": {
-    "build": "webpack",
-    "start":"webpack serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abaimov/nodejs.git"
-  },
-  "author": "abaimov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/abaimov/nodejs/issues"
-  },
-  "homepage": "https://github.com/abaimov/nodejs#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "moment": "^2.29.1"
-  },
-  "devDependencies": {
-    "prettier": "^2.5.1"
+    "find-my-way": "^5.4.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
   }
 }
