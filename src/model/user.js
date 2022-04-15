@@ -1,9 +1,16 @@
 const parseJSON = require("../utils/parseJSON");
 const writeJSON = require("../utils/writeJSON");
+const pagination = require("../utils/paginationQueryParams");
 const { pathJSONUser } = require("../utils/pathJSON");
 
-exports.allUsersModel = async () => {
-  return await parseJSON.readJSONAsync(pathJSONUser);
+exports.allUsersModel = async (queryParams) => {
+  if (queryParams !== null) {
+    const allUsers = await parseJSON.readJSONAsync(pathJSONUser);
+    const { pageNumber, pageSize } = queryParams;
+    return pagination.paginationQuery(allUsers, pageSize, pageNumber);
+  } else {
+    return await parseJSON.readJSONAsync(pathJSONUser);
+  }
 };
 
 exports.createNewUserModel = async (user) => {
@@ -32,7 +39,15 @@ exports.updateUserModel = async (updateUserData) => {
 };
 
 exports.deleteUserModel = async ({ id }) => {
-  const allUsers = await parseJSON.readJSONAsync(pathJSONUser);
-  const deleteUserById = allUsers.filter((user) => user.id !== id);
-  await writeJSON.writeJSONAsync(pathJSONUser, deleteUserById);
+  if (Array.isArray(id)) {
+    const allUsers = await parseJSON.readJSONAsync(pathJSONUser);
+    const deleteSomeUsersById = allUsers.filter(
+      (user) => !id.includes(user.id)
+    );
+    await writeJSON.writeJSONAsync(pathJSONUser, deleteSomeUsersById);
+  } else {
+    const allUsers = await parseJSON.readJSONAsync(pathJSONUser);
+    const deleteUserById = allUsers.filter((user) => user.id !== id);
+    await writeJSON.writeJSONAsync(pathJSONUser, deleteUserById);
+  }
 };

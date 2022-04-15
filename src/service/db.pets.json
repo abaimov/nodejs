@@ -1,12 +1,12 @@
 [
     {
-        "ownerId": null,
+        "ownerId": "f9247722-1e2f-4dd2-8e7a-e9d55039d2bf",
         "name": "Мурзик",
         "image": "https://klike.net/uploads/posts/2018-10/1539499416_1.jpg",
         "id": "efedc39b-41c1-4f52-b224-25e71e0379f8"
     },
     {
-        "ownerId": null,
+        "ownerId": "f9247722-1e2f-4dd2-8e7a-e9d55039d2bf",
         "name": "Барсик",
         "image": "https://cdn.lifehacker.ru/wp-content/uploads/2018/12/Kak-fotografirovat-kotikov-19-sovetov-ot-professionala_1544744286-1280x640.jpg",
         "id": "e8fb91c5-e9a7-4c7b-862e-5039b7b04307"
@@ -18,13 +18,19 @@
         "id": "e8fb91c5-e9a7-4c7b-862e-5039b7b04307"
     },
     {
-        "ownerId": "e135fcc8-3bc7-410e-827a-1b5590063e19",
+        "ownerId": "d1d583aa-c6e8-4f20-86f4-d7ec80c9d521",
         "name": "хома",
         "image": "https://cdn.lifehacker.ru/wp-content/uploads/2018/12/Kak-fotografirovat-kotikov-19-sovetov-ot-professionala_1544744286-1280x640.jpg",
         "id": "e8fb91c5-e9a7-4c7b-862e-5039b7b04327"
     },
     {
         "ownerId": "e135fcc8-3bc7-410e-827a-1b5590063e19",
+        "name": "хома2077",
+        "image": "https://cdn.lifehacker.ru/wp-content/uploads/2018/12/Kak-fotografirovat-kotikov-19-sovetov-ot-professionala_1544744286-1280x640.jpg",
+        "id": "e8fb91c5-e9a7-4c7b-862e-5039b7b041127"
+    },
+    {
+        "ownerId": "1",
         "name": "хома2077",
         "image": "https://cdn.lifehacker.ru/wp-content/uploads/2018/12/Kak-fotografirovat-kotikov-19-sovetov-ot-professionala_1544744286-1280x640.jpg",
         "id": "e8fb91c5-e9a7-4c7b-862e-5039b7b041127"
